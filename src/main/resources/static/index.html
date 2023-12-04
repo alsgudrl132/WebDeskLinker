@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<script src="https://kit.fontawesome.com/649b25c1cf.js" crossorigin="anonymous"></script>
+<body>
+    <div class="main-container">
+        <div class="about-container">
+            <i class="fa-solid fa-address-card about-icon"></i>
+            <p>about</p>
+        </div>
+        <div class="projects-container">
+            <i class="fa-solid fa-code projects-icon"></i>
+            <p>projects</p>
+        </div>
+        <div class="github-container">
+            <i class="fa-brands fa-github github-icon"></i>
+            <p>github</p>
+        </div>
+        <div class="notion-container">
+            <i class="fa-solid fa-note-sticky notion-icon"></i>
+            <p>notion</p>
+        </div>
+        <div class="blog-container">
+            <i class="fa-solid fa-blog blog-icon"></i>
+            <p>blog</p>
+        </div>
+        <div class="footer-bar">
+            <p class="footer-bar-date">2023/12/4</p>
+            <p class="footer-bar-time">12:58</p>
+        </div>
+    </div>
+</body>
+<script>
+    function getCurrentDateTime() {
+    const currentDate = new Date();
+
+    const year = currentDate.getFullYear();
+    const month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+    const day = ('0' + currentDate.getDate()).slice(-2);
+    const hours = ('0' + currentDate.getHours()).slice(-2);
+    const minutes = ('0' + currentDate.getMinutes()).slice(-2);
+    const seconds = ('0' + currentDate.getSeconds()).slice(-2);
+
+    return {
+        year,
+        month,
+        day,
+        hours,
+        minutes,
+        seconds
+    };
+}
+
+function updateDateTime() {
+    const { year, month, day, hours, minutes, seconds } = getCurrentDateTime();
+
+    // 각 요소에 업데이트된 값을 할당
+    document.querySelector('.footer-bar-date').innerText = `${year}/${month}/${day}`;
+    document.querySelector('.footer-bar-time').innerText = `${hours}:${minutes}:${seconds}`;
+}
+
+// DOMContentLoaded 이벤트에 바인딩하여 페이지 로드 시 실행
+document.addEventListener('DOMContentLoaded', function () {
+    // 최초 1회 실행
+    updateDateTime();
+
+    // 1초마다 updateDateTime 함수 호출
+    setInterval(updateDateTime, 1000);
+});
+
+</script>
+
+</html>

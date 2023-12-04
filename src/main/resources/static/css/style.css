@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.main-container {
+  background-color: #7071E8;
+  min-height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+.projects-container, .github-container, .notion-container, .blog-container{
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.about-icon:hover,
+.projects-icon:hover,
+.github-icon:hover,
+.notion-icon:hover,
+.blog-icon:hover {
+    transform: scale(1.15); /* 크기를 1.05배로 확대 */
+}
+.about-container{
+    padding: 25px;
+    margin-left: 20px;
+}
+.github-icon, .blog-icon{
+    background-color: #FFC7C7;
+    font-size: 90px;
+    border: 3px solid black;
+    border-radius: 10%;
+    box-shadow: 8px 8px 8px black;
+    transition: transform 0.2s ease-in-out;
+}
+.notion-icon{
+    background-color: #FFC7C7;
+    font-size: 98px;
+    border: 3px solid black;
+    border-radius: 10%;
+    box-shadow: 8px 8px 8px black;
+    transition: transform 0.2s ease-in-out;
+}
+.about-icon{
+   background-color: #FFC7C7;
+   font-size: 80px;
+   border: 3px solid black;
+   border-radius: 15%;
+   box-shadow: 8px 8px 8px black;
+   transition: transform 0.2s ease-in-out;
+}
+.projects-icon{
+    background-color: #FFC7C7;
+    height: 1.3em;
+    font-size: 70px;
+    border: 3px solid black;
+    border-radius: 15%;
+    box-shadow: 8px 8px 8px black;
+    transition: transform 0.2s ease-in-out;
+}
+.about-container p, .projects-container p, .github-container p, .notion-container p, .blog-container p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: default;
+}
+.notion-container p{
+    margin-left: 17px;
+}
+.about-container p{
+    margin-left: 20px;
+}
+.projects-container p{
+    margin-left: 13px;
+}
+.github-container p{
+    margin-left: 18px;
+}
+.blog-container p{
+    margin-left: 30px;
+}
+.footer-bar{
+    background-color: #ED9ED6;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: end;
+    margin-top: 13.7vh;
+    padding-right: 30px;
+    padding-top: 18.4px;
+    padding-bottom: 18.4px;
+}
+.footer-bar p{
+    font-weight: bold;
+    font-size: 25px;
+}
+.footer-bar p:last-child{
+    margin-right: 20px;
+}
