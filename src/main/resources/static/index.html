@@ -3,36 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <script src="https://kit.fontawesome.com/649b25c1cf.js" crossorigin="anonymous"></script>
 <body>
     <div class="main-container">
         <div class="about-container">
-            <i class="fa-solid fa-address-card about-icon"></i>
+            <i class="fa-solid fa-address-card about-icon" id="openAboutModalBtn"></i>
             <p>about</p>
+            <div id="aboutModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeAboutModalBtn">&#9675;</span>
+                    <p>This is a about modal!</p>
+                </div>
+            </div>
         </div>
         <div class="projects-container">
-            <i class="fa-solid fa-code projects-icon"></i>
+            <i class="fa-solid fa-code projects-icon" id="openProjectsModalBtn"></i>
             <p>projects</p>
+            <div id="projectsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeProjectsModalBtn">&#9675;</span>
+                    <p>This is a projects modal!</p>
+                </div>
+            </div>
         </div>
         <div class="github-container">
-            <i class="fa-brands fa-github github-icon"></i>
+            <i class="fa-brands fa-github github-icon" id="openGithubModalBtn"></i>
             <p>github</p>
+            <div id="githubModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeGithubModalBtn">&#9675;</span>
+                    <p>This is a github modal!</p>
+                </div>
+            </div>
         </div>
         <div class="notion-container">
-            <i class="fa-solid fa-note-sticky notion-icon"></i>
+            <i class="fa-solid fa-note-sticky notion-icon" id="openNotionModalBtn"></i>
             <p>notion</p>
+            <div id="notionModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeNotionModalBtn">&#9675;</span>
+                    <p>This is a notion modal!</p>
+                </div>
+            </div>
         </div>
         <div class="blog-container">
-            <i class="fa-solid fa-blog blog-icon"></i>
+            <i class="fa-solid fa-blog blog-icon" id="openBlogModalBtn"></i>
             <p>blog</p>
+            <div id="blogModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeBlogModalBtn">&#9675;</span>
+                    <p>This is a blog modal!</p>
+                </div>
+            </div>
         </div>
         <div class="footer-bar">
             <p class="footer-bar-date">2023/12/4</p>
             <p class="footer-bar-time">12:58</p>
         </div>
+
     </div>
 </body>
 <script>
@@ -74,5 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
+<script src="js/scripts.js"></script>
 
 </html>
