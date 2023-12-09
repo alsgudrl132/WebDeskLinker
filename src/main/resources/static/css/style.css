@@ -7,7 +7,7 @@ body, html {
 }
 .main-container {
   position: relative;
-  background-color: #7071E8;
+  background-color: #EBE3D5;
   min-height: 100vh;
   margin: 0px;
   overflow: hidden;
@@ -29,7 +29,7 @@ body, html {
     margin-left: 20px;
 }
 .github-icon, .blog-icon{
-    background-color: #FFC7C7;
+    background-color: #F3EEEA;
     font-size: 90px;
     border: 3px solid black;
     border-radius: 10%;
@@ -37,7 +37,7 @@ body, html {
     transition: transform 0.2s ease-in-out;
 }
 .notion-icon{
-    background-color: #FFC7C7;
+    background-color: #F3EEEA;
     font-size: 98px;
     border: 3px solid black;
     border-radius: 10%;
@@ -45,7 +45,7 @@ body, html {
     transition: transform 0.2s ease-in-out;
 }
 .about-icon{
-   background-color: #FFC7C7;
+   background-color: #F3EEEA;
    height: 1.3em;
    font-size: 70px;
    border: 3px solid black;
@@ -54,7 +54,7 @@ body, html {
    transition: transform 0.2s ease-in-out;
 }
 .projects-icon{
-    background-color: #FFC7C7;
+    background-color: #F3EEEA;
     height: 1.3em;
     font-size: 70px;
     border: 3px solid black;
@@ -88,7 +88,7 @@ body, html {
     bottom: 0px;
     right: 0px;
     width: 100%;
-    background-color: #ED9ED6;
+    background-color: #776B5D;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     text-align: end;
@@ -100,9 +100,10 @@ body, html {
 .footer-bar p{
     font-weight: bold;
     font-size: 25px;
+    color: #F3EEEA;
 }
 .footer-bar p:last-child{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 /** 모달 */
 .modal {
@@ -122,11 +123,24 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ED9ED6;
+    background-color: #EBE3D5;
     padding: 20px;
     border: 5px solid black;
-    border-radius: 5%;
+    border-radius: 25px;
     box-shadow: 12px 12px 12px black;
+}
+.modal-content-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EBE3D5;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: 12px 12px 12px black;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 
 .close {
@@ -185,9 +199,9 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #EBE3D5;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid #EBE3D5;
 }
 .about-img-container img{
     margin: 5px;
@@ -206,16 +220,16 @@ body, html {
     justify-content: flex-start;
     align-items: center;
 }
-.modal-box img{
+.modal-img{
     width: 100px;
     height: 100px;
-    background-color: #FFC7C7;
+    background-color: #F3EEEA;
     border: 3px solid black;
     border-radius: 15%;
     box-shadow: 8px 8px 8px black;
     transition: transform 0.2s ease-in-out;
 }
-.modal-box img:hover{
+.modal-img:hover{
     transform: scale(1.15);
 }
 .project-div{
@@ -245,9 +259,38 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ED9ED6;
+    background-color: #EBE3D5;
     padding: 20px;
     border: 5px solid black;
-    border-radius: 5%;
+    border-radius: 25px;
     box-shadow: 12px 12px 12px black;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+/** 프로젝트 관련 파트 */
+.project-title{
+    display: flex;
+    justify-content: center;
+}
+.project-title h1{
+    font-size: 50px;
+}
+.project-title h3{
+    font-size: 30px;
+}
+.modal-box  h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.modal-box h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.project-title-content{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+}
+.task-container{
+    margin-top: 10px;
 }
