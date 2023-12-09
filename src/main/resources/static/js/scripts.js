@@ -35,59 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-//    const githubModal = document.getElementById("githubModal");
-//    const openGithubBtn = document.getElementById("openGithubModalBtn");
-//    const closeGithubBtn = document.getElementById("closeGithubModalBtn");
-//
-//    openGithubBtn.addEventListener("click", function() {
-//        githubModal.style.display = "block";
-//    });
-//
-//    closeGithubBtn.addEventListener("click", function() {
-//        githubModal.style.display = "none";
-//    });
-//
-//    window.addEventListener("click", function(event) {
-//        if (event.target === githubModal) {
-//            githubModal.style.display = "none";
-//        }
-//    });
-//
-//    const notionModal = document.getElementById("notionModal");
-//    const openNotionBtn = document.getElementById("openNotionModalBtn");
-//    const closeNotionBtn = document.getElementById("closeNotionModalBtn");
-//
-//    openNotionBtn.addEventListener("click", function() {
-//        notionModal.style.display = "block";
-//    });
-//
-//    closeNotionBtn.addEventListener("click", function() {
-//        notionModal.style.display = "none";
-//    });
-//
-//    window.addEventListener("click", function(event) {
-//        if (event.target === notionModal) {
-//            notionModal.style.display = "none";
-//        }
-//    });
-//    const blogModal = document.getElementById("blogModal");
-//    const openBlogBtn = document.getElementById("openBlogModalBtn");
-//    const closeBlogBtn = document.getElementById("closeBlogModalBtn");
-//
-//    openBlogBtn.addEventListener("click", function() {
-//        blogModal.style.display = "block";
-//    });
-//
-//    closeBlogBtn.addEventListener("click", function() {
-//        blogModal.style.display = "none";
-//    });
-//
-//    window.addEventListener("click", function(event) {
-//        if (event.target === blogModal) {
-//            blogModal.style.display = "none";
-//        }
-//    });
-
     const githubLink = "https://github.com/alsgudrl132";
     const notionLink = "https://imminent-friction-a4d.notion.site/b689df9e5a454f50861de9fa9f02a55b?pvs=4";
 
@@ -100,5 +47,83 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector("#openGithubModalBtn").addEventListener("click",() => hrefGithubLink());
     document.querySelector("#openNotionModalBtn").addEventListener("click",() => hrefNotionLink());
+
+    //새로운 모달
+
+    const eftHelperModal = document.getElementById("eftHelperModal");
+    const openEftHelperBtn = document.getElementById("openEftHelperModalBtn");
+    const closeEftHelperBtn = document.getElementById("closeEftHelperModalBtn");
+
+    openEftHelperBtn.addEventListener("click", function() {
+            console.log("eftHelperModal");
+            eftHelperModal.style.display = "block";
+        });
+
+        closeEftHelperBtn.addEventListener("click", function() {
+            eftHelperModal.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target === eftHelperModal) {
+                eftHelperModal.style.display = "none";
+            }
+        });
+
+    const blueOceanModal = document.getElementById("blueOceanModal");
+    const openBlueOceanBtn = document.getElementById("openBlueOceanModalBtn");
+    const closeBlueOceanBtn = document.getElementById("closeBlueOceanModalBtn");
+
+    openBlueOceanBtn.addEventListener("click", function() {
+        console.log("blueOceanModal");
+        blueOceanModal.style.display = "block";
+    });
+
+    closeBlueOceanBtn.addEventListener("click", function() {
+        blueOceanModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === blueOceanModal) {
+            blueOceanModal.style.display = "none";
+        }
+    });
+
+    const pillDexModal = document.getElementById("pillDexModal");
+    const openPillDexBtn = document.getElementById("openPillDexModalBtn");
+    const closePillDexBtn = document.getElementById("closePillDexModalBtn");
+
+    openPillDexBtn.addEventListener("click", function() {
+        console.log("pillDexModal");
+        pillDexModal.style.display = "block";
+    });
+
+    closePillDexBtn.addEventListener("click", function() {
+        pillDexModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === pillDexModal) {
+            pillDexModal.style.display = "none";
+        }
+    });
+
+    const webDeskLinkerModal = document.getElementById("webDeskLinkerModal");
+    const openWebDeskLinkerBtn = document.getElementById("openWebDeskLinkerModalBtn");
+    const closeWebDeskLinkerBtn = document.getElementById("closeWebDeskLinkerModalBtn");
+
+    openWebDeskLinkerBtn.addEventListener("click", function() {
+        console.log("webDeskLinkerModal");
+        webDeskLinkerModal.style.display = "block";
+    });
+
+    closeWebDeskLinkerBtn.addEventListener("click", function() {
+        webDeskLinkerModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === webDeskLinkerModal) {
+            webDeskLinkerModal.style.display = "none";
+        }
+    });
 
 });
