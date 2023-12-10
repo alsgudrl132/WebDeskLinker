@@ -5,6 +5,20 @@ body, html {
 * {
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width: 25px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #776B5D;
+    background-clip: padding-box;
+    border-radius: 0 20px 20px 0;
+}
+::-webkit-scrollbar-track{
+    background-color: #EBE3D5;
+    border-radius: 0 20px 20px 0;
+    box-shadow: inset 0px 0px 5px black;
+}
+
 .main-container {
   position: relative;
   background-color: #EBE3D5;
@@ -266,31 +280,81 @@ body, html {
     box-shadow: 12px 12px 12px black;
     max-height: 80vh;
     overflow-y: auto;
+    text-align: left;
 }
+
 /** 프로젝트 관련 파트 */
-.project-title{
+.project-title {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
-.project-title h1{
-    font-size: 50px;
-}
-.project-title h3{
-    font-size: 30px;
-}
-.modal-box  h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.modal-box h6{
-    font-size: 20px;
-    font-weight: bold;
-}
-.project-title-content{
-    margin-left: 20px;
+
+.project-title img {
     margin-right: 20px;
+}
+
+.project-title h1 {
+    font-size: 36px;
+}
+
+.project-title h3 {
+    font-size: 24px;
+}
+
+.project-title-content {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.task-flex-container{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.task-container h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.task-container ul {
+    list-style-type: square;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.task-container li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.task-container span{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.task-img-container{
     width: 50%;
 }
-.task-container{
-    margin-top: 10px;
+
+.task-img{
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.new-modal-content {
+    text-align: left;
+}
+
+.modal-box h1,
+.modal-box h6 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
