@@ -196,18 +196,24 @@ body, html {
 }
 .about-info-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .about-info-box{
     display:flex;
     justify-content: center;
+    align-items: center;
     margin: 15px;
 }
 .about-info-container img{
     margin-top: 15px;
+    margin-right: 10px;
 }
 .about-info-box p:first-child{
     font-size: 30px;
+}
+.about-info0box div{
+    text-align: left;
 }
 .about-img-container{
     display: flex;
@@ -363,4 +369,17 @@ body, html {
     margin-top: 15px;
     font-size: 20px;
     font-weight: bold;
+}
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+}
+.profile-container strong{
+    font-weight: bold;
+    font-size: 40px;
 }
