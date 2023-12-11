@@ -107,23 +107,23 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const webDeskLinkerModal = document.getElementById("webDeskLinkerModal");
-    const openWebDeskLinkerBtn = document.getElementById("openWebDeskLinkerModalBtn");
-    const closeWebDeskLinkerBtn = document.getElementById("closeWebDeskLinkerModalBtn");
-
-    openWebDeskLinkerBtn.addEventListener("click", function() {
-        console.log("webDeskLinkerModal");
-        webDeskLinkerModal.style.display = "block";
-    });
-
-    closeWebDeskLinkerBtn.addEventListener("click", function() {
-        webDeskLinkerModal.style.display = "none";
-    });
-
-    window.addEventListener("click", function(event) {
-        if (event.target === webDeskLinkerModal) {
-            webDeskLinkerModal.style.display = "none";
-        }
-    });
+//    const webDeskLinkerModal = document.getElementById("webDeskLinkerModal");
+//    const openWebDeskLinkerBtn = document.getElementById("openWebDeskLinkerModalBtn");
+//    const closeWebDeskLinkerBtn = document.getElementById("closeWebDeskLinkerModalBtn");
+//
+//    openWebDeskLinkerBtn.addEventListener("click", function() {
+//        console.log("webDeskLinkerModal");
+//        webDeskLinkerModal.style.display = "block";
+//    });
+//
+//    closeWebDeskLinkerBtn.addEventListener("click", function() {
+//        webDeskLinkerModal.style.display = "none";
+//    });
+//
+//    window.addEventListener("click", function(event) {
+//        if (event.target === webDeskLinkerModal) {
+//            webDeskLinkerModal.style.display = "none";
+//        }
+//    });
 
 });
