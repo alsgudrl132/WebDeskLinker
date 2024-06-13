@@ -107,6 +107,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    const chatAppModal = document.getElementById("chatAppModal");
+        const openChatAppBtn = document.getElementById("openChatAppModalBtn");
+        const closeChatAppBtn = document.getElementById("closeChatAppModalBtn");
+
+        openChatAppBtn.addEventListener("click", function() {
+            console.log("chatAppModal");
+            chatAppModal.style.display = "block";
+        });
+
+        closeChatAppBtn.addEventListener("click", function() {
+            chatAppModal.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target === chatAppModal) {
+                chatAppModal.style.display = "none";
+            }
+        });
+
 //    const webDeskLinkerModal = document.getElementById("webDeskLinkerModal");
 //    const openWebDeskLinkerBtn = document.getElementById("openWebDeskLinkerModalBtn");
 //    const closeWebDeskLinkerBtn = document.getElementById("closeWebDeskLinkerModalBtn");
