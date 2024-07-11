@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const chatAppModal = document.getElementById("chatAppModal");
-        const openChatAppBtn = document.getElementById("openChatAppModalBtn");
-        const closeChatAppBtn = document.getElementById("closeChatAppModalBtn");
+    const openChatAppBtn = document.getElementById("openChatAppModalBtn");
+    const closeChatAppBtn = document.getElementById("closeChatAppModalBtn");
 
         openChatAppBtn.addEventListener("click", function() {
             console.log("chatAppModal");
@@ -125,6 +125,25 @@ document.addEventListener("DOMContentLoaded", function() {
                 chatAppModal.style.display = "none";
             }
         });
+
+    const teamAppModal = document.getElementById("teamAppModal");
+    const openTeamAppBtn = document.getElementById("openTeamAppModalBtn");
+    const closeTeamAppBtn = document.getElementById("closeTeamAppModalBtn");
+
+            openTeamAppBtn.addEventListener("click", function() {
+                console.log("teamAppModal");
+                teamAppModal.style.display = "block";
+            });
+
+            closeTeamAppBtn.addEventListener("click", function() {
+                teamAppModal.style.display = "none";
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target === teamAppModal) {
+                    teamAppModal.style.display = "none";
+                }
+            });
 
 //    const webDeskLinkerModal = document.getElementById("webDeskLinkerModal");
 //    const openWebDeskLinkerBtn = document.getElementById("openWebDeskLinkerModalBtn");
