@@ -1,15 +1,15 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.2.0'
+	id 'org.springframework.boot' version '3.2.0'  // Spring Boot 최신 버전 유지
 	id 'io.spring.dependency-management' version '1.1.4'
 }
-
 
 group = 'com.alsvhtks'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '17'
+	sourceCompatibility = '21'  // Java 21로 설정
+	targetCompatibility = '21'  // Java 21로 설정
 }
 
 configurations {
@@ -31,7 +31,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
-	implementation 'org.springframework.boot:spring-boot-devtools:2.0.4.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {
